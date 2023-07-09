@@ -23,6 +23,7 @@ pipeline {
                 sh '''
                     echo My name is ${SAMPLE_VAR}
                     echo the url is ${ENV_URL}
+                    env
                 '''
             }
         }
