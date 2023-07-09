@@ -3,6 +3,7 @@ pipeline {
     environment {
         ENV_URL = "pipeline.googlr.com"
         SAMPLE_VAR = "saswat kumar mishra"
+        SSHCRED = credentials("SSH_CRED")
     }
     stages {
         stage('Build') {
